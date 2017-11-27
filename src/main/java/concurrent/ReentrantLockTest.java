@@ -19,12 +19,11 @@ public class ReentrantLockTest {
 		lock.unlock();
 		
 		new Thread(new Runnable() {
-
+			@Override
 			public void run() {
 				lock.lock();
 				System.out.println("b");
 			}
-			
 		}).start();
 	}
 
