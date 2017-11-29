@@ -5,7 +5,7 @@ package concurrent;
  * 
  * @author qingfeng
  */
-public class SynchronizedTest {
+public class SynchronizedReentrantTest {
 
 	public static void main(String[] args) {
 		Object o = new Object();

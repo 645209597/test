@@ -19,7 +19,7 @@ public class ConditionAwaitTest {
 		Thread t = new Thread(new Runnable() {
 			@Override
 			public void run() {
-				lock.tryLock();
+				lock.lock();
 				try {
 					condition.await(); // 未获取到锁时抛java.lang.IllegalMonitorStateException
 					// condition.await(2000, TimeUnit.MILLISECONDS); 
