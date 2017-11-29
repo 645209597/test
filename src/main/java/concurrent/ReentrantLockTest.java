@@ -16,7 +16,7 @@ public class ReentrantLockTest {
 		System.out.println("a");
 		lock.unlock();
 		lock.unlock();
-		lock.unlock();
+		// lock.unlock(); // 释放锁的次数不能多于加锁的次数
 		
 		new Thread(new Runnable() {
 			@Override
