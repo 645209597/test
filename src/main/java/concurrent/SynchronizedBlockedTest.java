@@ -8,7 +8,7 @@ package concurrent;
 public class SynchronizedBlockedTest {
 
 	public static void main(String[] args) {
-		Object o = new Object();
+		final Object o = new Object();
 		
 		Thread t = new Thread(new Runnable() {
 			@Override
