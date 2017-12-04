@@ -27,6 +27,8 @@ public class ThreadSleepTest {
 		}
 		
 		System.out.println(t.getState());
+		
+		t.interrupt();
 	}
 
 }
