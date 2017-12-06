@@ -30,7 +30,7 @@ public class SynchronizedBlockedTest {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			
+			System.out.println(Thread.holdsLock(o));
 			System.out.println(t.getState());
 		}
 	}
