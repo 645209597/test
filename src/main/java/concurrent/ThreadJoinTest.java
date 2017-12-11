@@ -20,6 +20,7 @@ public class ThreadJoinTest {
 				}
 				
 				System.out.println(c.getState());
+				// throw new RuntimeException("");
 			}
 		});
 		t.start();
@@ -29,7 +30,10 @@ public class ThreadJoinTest {
 			// t.join(3000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
-		}
+		} catch (Exception e) {
+        	System.out.println("execute error");
+            e.printStackTrace();
+        }
 	}
 
 }
