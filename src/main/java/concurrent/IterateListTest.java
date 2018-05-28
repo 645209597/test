@@ -21,7 +21,7 @@ public class IterateListTest {
 	    		list.remove(i);
 	    	}
 	    }
-	    System.out.println("最后结果=" + list.toString());
+	    System.out.println("最后结果1=" + list.toString());
 	    
 	    list = new ArrayList<Integer>();
 	    list.add(1);
@@ -35,10 +35,12 @@ public class IterateListTest {
 					list.remove(value);
 				}
 			}
-			System.out.println("最后结果=" + list.toString());
+			System.out.println("最后结果1=" + list.toString());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	    
+	    System.out.println("--------------------------------------------");
 	    
 	    list = new ArrayList<Integer>();
 	    list.add(1);
@@ -52,7 +54,7 @@ public class IterateListTest {
 	    		it.remove();
 	    	}
 	    }
-	    System.out.println("最后结果=" + list.toString());
+	    System.out.println("最后结果22=" + list.toString());
 	    
 	    list = new LinkedList<Integer>();
 	    list.add(1);
@@ -65,7 +67,9 @@ public class IterateListTest {
 	    		list.remove(i);
 	    	}
 	    }
-	    System.out.println("最后结果=" + list.toString());
+	    System.out.println("最后结果2=" + list.toString());
+	    
+	    System.out.println("--------------------------------------------");
 	    
 	    list = new LinkedList<Integer>();
 	    list.add(1);
@@ -79,7 +83,7 @@ public class IterateListTest {
 					list.remove(value);
 				}
 			}
-			System.out.println("最后结果=" + list.toString());
+			System.out.println("最后结果3=" + list.toString());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -96,7 +100,9 @@ public class IterateListTest {
 	    		it.remove();
 	    	}
 	    }
-	    System.out.println("最后结果=" + list.toString());
+	    System.out.println("最后结果3=" + list.toString());
+	    
+	    System.out.println("--------------------------------------------");
 	    
 	    CopyOnWriteArrayList<Integer> list2 = new CopyOnWriteArrayList<Integer>();
 	    list2.add(1);
@@ -109,7 +115,7 @@ public class IterateListTest {
 	    		list2.remove(i);
 	    	}
 	    }
-	    System.out.println("最后结果=" + list2.toString());
+	    System.out.println("最后结果4=" + list2.toString());
 	    
 	    list2 = new CopyOnWriteArrayList<Integer>();
 	    list2.add(1);
@@ -122,8 +128,10 @@ public class IterateListTest {
 				list2.remove(value);
 			}
 		}
-		System.out.println("最后结果=" + list2.toString());
+		System.out.println("最后结果4=" + list2.toString());
 	    
+	    System.out.println("--------------------------------------------");
+		
 	    list2 = new CopyOnWriteArrayList<Integer>();
 	    list2.add(1);
 	    list2.add(2);
@@ -137,7 +145,7 @@ public class IterateListTest {
 					it.remove();
 				}
 			}
-			System.out.println("最后结果=" + list2.toString());
+			System.out.println("最后结果5=" + list2.toString());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -153,8 +161,10 @@ public class IterateListTest {
 	    		list3.remove(i);
 	    	}
 	    }
-	    System.out.println("最后结果=" + list3.toString());
+	    System.out.println("最后结果5=" + list3.toString());
 	    
+	    System.out.println("--------------------------------------------");
+
 	    list3 = Collections.synchronizedList(new ArrayList<Integer>());
 	    list3.add(1);
 	    list3.add(2);
@@ -167,7 +177,7 @@ public class IterateListTest {
 					list3.remove(value);
 				}
 			}
-			System.out.println("最后结果=" + list3.toString());
+			System.out.println("最后结果6=" + list3.toString());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -184,7 +194,7 @@ public class IterateListTest {
 				it.remove();
 			}
 		}
-		System.out.println("最后结果=" + list3.toString());
+		System.out.println("最后结果6=" + list3.toString());
 	}
 
 }
