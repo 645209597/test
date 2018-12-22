@@ -9,8 +9,18 @@ public class ThrowableTest {
 			
 		}
 		
+		try {
+			f();
+		} catch (Throwable e) {
+			
+		}
+		
 		throw new Error();
 		// throw new RuntimeException();
 	}
 
+	static void f() throws Throwable {
+		
+	}
+	
 }
