@@ -2,7 +2,7 @@ package protect.inner;
 
 public class A {
 
-	protected int a;
+	protected int a = 1;
 	protected void f() {}
 	
 }

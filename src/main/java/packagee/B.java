@@ -1,0 +1,5 @@
+package packagee;
+
+class BB {
+
+}
