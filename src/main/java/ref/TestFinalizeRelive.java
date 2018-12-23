@@ -1,7 +1,7 @@
 package ref;
 
-public class TestFinalize {
-	public static TestFinalize obj;
+public class TestFinalizeRelive {
+	public static TestFinalizeRelive obj;
 	@Override
 	protected void finalize() throws Throwable {
 		super.finalize();
@@ -13,7 +13,7 @@ public class TestFinalize {
 		return "I am CanReliveObj";
 	}
 	public static void main(String[] args) throws InterruptedException{
-		obj=new TestFinalize();
+		obj=new TestFinalizeRelive();
 		obj=null;
 		System.gc();
 		Thread.sleep(1000);

@@ -40,10 +40,10 @@ public class TestWeakRef {
 		weakQueue = new ReferenceQueue<MyObject>();  
 		WeakReference<MyObject> weakRef=new WeakReference<MyObject>(obj,weakQueue);
 		new CheckRefQueue().start();
+		//存在软引用
+		//SoftReference<MyObject> softRef=new SoftReference<MyObject>(obj);
 		//去除强引用
 		obj=null;
-		//存在软引用
-		SoftReference<MyObject> softRef=new SoftReference<MyObject>(obj);
 		System.out.println("Before GC:Weak Get= " + weakRef.get());
 		System.gc();
 		System.out.println("After GC:Weak Get= " + weakRef.get());

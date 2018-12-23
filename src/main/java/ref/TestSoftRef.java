@@ -1,5 +1,6 @@
 package ref;
 
+import java.lang.ref.PhantomReference;
 import java.lang.ref.Reference;
 import java.lang.ref.ReferenceQueue;
 import java.lang.ref.SoftReference;
@@ -46,7 +47,6 @@ public class TestSoftRef {
 		MyObject obj=new MyObject();
 		softQueue = new ReferenceQueue<MyObject>();  
 		SoftReference<MyObject> softRef=new SoftReference<MyObject>(obj,softQueue);
-		
 		new CheckRefQueue().start();
 		//去除强引用
 		obj=null;
