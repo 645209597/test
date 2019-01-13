@@ -34,10 +34,10 @@ public class ThreadAndFutureTest {
 	            	
 	            	// System.out.println(c.getState());
 	            	
-	            	// throw new RuntimeException("");
-	            	int r = new Random().nextInt(100);
-	            	System.out.println(r + df.format(new Date()));
-	                return r;
+	            	throw new RuntimeException("");
+//	            	int r = new Random().nextInt(100);
+//	            	System.out.println(r + df.format(new Date()));
+//	                return r;
 	            }
 	        };
 	        future = new FutureTask<Integer>(callable);
