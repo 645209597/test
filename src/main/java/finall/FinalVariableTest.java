@@ -2,9 +2,14 @@ package finall;
 
 public class FinalVariableTest {
 
-	// final int a;
-	// final Integer b;
-	final String c = "";
+	final int a;
+	final Integer b = 0;
+	final String c;
+	
+	public FinalVariableTest(int a, String c) {
+		this.a = a;
+		this.c = c;
+	}
 	
 	public static void main(String[] args) {
 		
@@ -21,4 +26,5 @@ public class FinalVariableTest {
 	void ff() {
 		// c = "";
 	}
+	
 }
