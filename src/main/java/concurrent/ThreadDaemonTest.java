@@ -23,7 +23,7 @@ public class ThreadDaemonTest {
 				}
 			}
 		});
-		t.setDaemon(true);
+		// t.setDaemon(true);
 		t.start();
 		
 		try {
