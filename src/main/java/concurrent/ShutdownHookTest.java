@@ -27,7 +27,7 @@ public class ShutdownHookTest {
 		
 		// Runtime.getRuntime().exit(-1);
 		// Runtime.getRuntime().halt(-1);
-		// while (true) {}
+		 while (true) {}
 	}
 
 }
